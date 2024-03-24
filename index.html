@@ -1,0 +1,38 @@
+<!-- Defining the document type and language -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Seting the character encoding and viewport for responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Seting the title of the webpage -->
+    <title>The Smoothie Machine</title>
+    <!-- Link to the external stylesheet for styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Heading for the webpage -->
+    <h1>Smoothie Ko Adda</h1>
+    <!-- Form for ordering smoothies with input fields and a button -->
+    <form id="smoothieForm">
+        <label for="fruits">Fruits:</label>
+        <input type="text" id="fruits" name="fruits" placeholder="Fruits Names Here">
+        <br>
+        <label for="base">Base:</label>
+        <input type="text" id="base" name="base" placeholder="Enter Base Here">
+        <br>
+        <label for="sweeteners">Sweeteners:</label>
+        <input type="text" id="sweeteners" name="sweeteners" placeholder="Enter your desirable sweeteness ">
+        <br>
+        <label for="toppings">Toppings:</label>
+        <input type="text" id="toppings" name="toppings" placeholder="Enter toppings of your choice">
+        <br>
+        <button type="button" onclick="orderSmoothie()">Order</button> <!-- Button to order smoothie, calling orderSmoothie function -->
+    </form>
+    <!-- Div to display the smoothie details -->
+    <div id="smoothieOutput"></div>
+    <!-- Including the JavaScript files for smoothie functionality -->
+    <script src="smoothi.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
